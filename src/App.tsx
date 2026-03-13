@@ -1111,7 +1111,7 @@ const bottomNavStyle: React.CSSProperties = {
   border: "1px solid #efdce7",
   borderRadius: "18px",
   display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+  gridTemplateColumns: "repeat(6, 1fr)",
   gap: "6px",
   padding: "8px",
   zIndex: 9999,
