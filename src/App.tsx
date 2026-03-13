@@ -278,7 +278,9 @@ useEffect(() => {
         <>
           <section style={heroCardStyle}>
             <p style={miniLabelStyle}>Tu cocina, más fácil</p>
-            <h1 style={heroTitleStyle}>Tus recetas ahora son inteligentes</h1>
+           <h1 style={heroTitleStyle}>
+  Tus recetas ahora son inteligentes
+</h1>
             <p style={heroTextStyle}>
               Todo lo que necesitas para buscar recetas, guardar tus favoritas,
               organizar ingredientes y preparar postres en un solo lugar.
@@ -779,9 +781,9 @@ Perfil
 
 const appStyle: React.CSSProperties = {
   minHeight: "100vh",
-  background: "linear-gradient(180deg, #fde8f1 0%, #f7f4ef 100%)",
-  padding: "18px",
-  paddingBottom: "100px",
+  background: "linear-gradient(180deg, #fff4f8 0%, #f8f4f1 100%)",
+  padding: "10px",
+  paddingBottom: "120px",
   fontFamily: "Arial, sans-serif",
 };
 
@@ -791,12 +793,12 @@ const containerStyle: React.CSSProperties = {
 };
 
 const heroCardStyle: React.CSSProperties = {
-  background: "rgba(255,255,255,0.88)",
-  border: "1px solid #f0dce5",
-  borderRadius: "24px",
-  padding: "22px",
-  boxShadow: "0 8px 24px rgba(0,0,0,0.05)",
-  marginBottom: "20px",
+  background: "rgba(255,255,255,0.96)",
+  border: "1px solid #f1d9e5",
+  borderRadius: "18px",
+  padding: "16px",
+  boxShadow: "0 6px 18px rgba(195, 120, 156, 0.07)",
+  marginBottom: "14px",
 };
 
 const miniLabelStyle: React.CSSProperties = {
@@ -808,17 +810,19 @@ const miniLabelStyle: React.CSSProperties = {
 };
 
 const heroTitleStyle: React.CSSProperties = {
-  margin: "0 0 10px 0",
-  color: "#402c4f",
-  fontSize: "34px",
-  lineHeight: 1.1,
+  margin: "0 0 8px 0",
+  color: "#3f2b47",
+  fontSize: "22px",
+  lineHeight: 1.2,
+  textAlign: "center",
 };
 
 const heroTextStyle: React.CSSProperties = {
-  margin: "0 0 18px 0",
-  color: "#6e6173",
-  lineHeight: 1.5,
-  fontSize: "16px",
+  margin: "0 0 12px 0",
+  color: "#6f6373",
+  lineHeight: 1.45,
+  fontSize: "14px",
+  textAlign: "center",
 };
 
 const inputStyle: React.CSSProperties = {
@@ -857,27 +861,32 @@ const buttonGroupStyle: React.CSSProperties = {
 
 const primaryButtonStyle: React.CSSProperties = {
   width: "100%",
-  padding: "14px 18px",
+  padding: "16px 20px",
   border: "none",
-  borderRadius: "14px",
-  background: "#e96b98",
+  borderRadius: "18px",
+  background: "linear-gradient(135deg, #e96b98, #d45785)",
   color: "#ffffff",
   cursor: "pointer",
   fontSize: "16px",
   fontWeight: 700,
-  boxShadow: "0 6px 14px rgba(233,107,152,0.25)",
+  letterSpacing: "0.3px",
+  boxShadow: "0 10px 22px rgba(233,107,152,0.35)",
+  transition: "all 0.25s ease",
 };
 
 const secondaryButtonStyle: React.CSSProperties = {
   width: "100%",
-  padding: "14px 18px",
+  padding: "16px 20px",
   border: "none",
-  borderRadius: "14px",
+  borderRadius: "18px",
   background: "#f4dfca",
-  color: "#7a4d2c",
+  color: "#6e4d3a",
   cursor: "pointer",
   fontSize: "16px",
-  fontWeight: 700,
+  fontWeight: 600,
+  letterSpacing: "0.2px",
+  boxShadow: "0 8px 18px rgba(0,0,0,0.08)",
+  transition: "all 0.25s ease",
 };
 
 const sectionStyle: React.CSSProperties = {
@@ -1094,28 +1103,36 @@ const savedRecipeTextStyle: React.CSSProperties = {
 
 const bottomNavStyle: React.CSSProperties = {
   position: "fixed",
-  bottom: 0,
-  left: 0,
-  right: 0,
-  background: "rgba(255,255,255,0.96)",
-  borderTop: "1px solid #efdce7",
+  bottom: "8px",
+  left: "50%",
+  transform: "translateX(-50%)",
+  width: "min(96%, 520px)",
+  background: "rgba(255,255,255,0.98)",
+  border: "1px solid #efdce7",
+  borderRadius: "18px",
   display: "grid",
-  gridTemplateColumns: "repeat(5, 1fr)",
-  gap: "8px",
-  padding: "10px",
+  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+  gap: "6px",
+  padding: "8px",
   zIndex: 9999,
   backdropFilter: "blur(8px)",
+  boxShadow: "0 10px 24px rgba(0,0,0,0.08)",
 };
 
 const navButtonStyle = (active: boolean): React.CSSProperties => ({
   border: "none",
-  borderRadius: "14px",
-  padding: "12px 6px",
+  borderRadius: "10px",
+  padding: "8px 4px",
   background: active ? "#f8d8e5" : "#f8f3f6",
   color: active ? "#b94b79" : "#6c5a72",
-  fontSize: "13px",
+  fontSize: "10px",
   fontWeight: 700,
+  lineHeight: 1.1,
   cursor: "pointer",
+  minHeight: "34px",
+  whiteSpace: "normal",
+  wordBreak: "break-word",
+  textAlign: "center",
 });
 
 export default App;
