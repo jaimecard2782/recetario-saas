@@ -1,5 +1,4 @@
 export default function DashboardPage() {
-  return <h1 style={{ color: "red" }}>PRUEBA DASHBOARD</h1>;
 }
   const buscarEnGoogle = () => {
     window.open(
@@ -105,7 +104,7 @@ export default function DashboardPage() {
       </div>
     </div>
   );
-}
+
 
 const pageStyle: React.CSSProperties = {
   display: "flex",
