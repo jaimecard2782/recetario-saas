@@ -7,7 +7,7 @@ categoria: "Postres y Pasteles",
 descripcion: "Mini pasteles deliciosos",
 pdf: "https://drive.google.com/file/d/1a17I-F594sIRGOFTJXEkgOYO0n32Xw4G/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1qxt0dqVUyB6nyL6dfxnjY7AHkF3E5ftu/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/pasteles-caseros.png"
 },
 
 {
@@ -17,7 +17,7 @@ categoria: "Postres",
 descripcion: "Las mejores trufas",
 pdf: "https://drive.google.com/file/d/13j-Xc4uKxwO6-Bzux7cwsUt24yQ6yRFX/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1w_4ftBpJINL8fNZqFZ5PoKlEtowIysPk/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/trufas.png"
 },
 
 {
@@ -27,7 +27,7 @@ categoria: "Pasteles",
 descripcion: "Rebanadas de pastel",
 pdf: "https://drive.google.com/file/d/17nv4m-HWgaItZo13LW3doVw3OlgCG6Yy/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1oz93hN2eBojO5AA9-eqh7ocl_2JWLr4z/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/rebanadas-gourmet.png"
 },
 
 {
@@ -37,7 +37,7 @@ categoria: "Postres",
 descripcion: "Flan inigualable",
 pdf: "https://drive.google.com/file/d/1vT7nVyAXBsiWKirudIzJ_gBjX06doGP0/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1PU2hpkAmh0ryccHwHQtLkCqCbnJ6WVdy/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/flan-sin-horno.png"
 },
 
 {
@@ -47,7 +47,7 @@ categoria: "Pasteles",
 descripcion: "Pasteles saludables",
 pdf: "https://drive.google.com/file/d/1cFI_3DQVqSevMJ8WBJKSIn1MEy2HafMo/view?usp=drive_link",
 video: "",
-portada: ""
+portada: "/recetarios/pasteles-sin-gluten.png"
 },
 
 {
@@ -57,7 +57,7 @@ categoria: "Pasteles",
 descripcion: "Pasteles de la abuela",
 pdf: "https://drive.google.com/file/d/1LXkEhFrNdBA6F8GxLNsCGkEYSA-Sdz7f/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1d2r8eF_tfw6alQmZ6XxJKzlvjjlbjyqt/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/masas-pasteles.png"
 },
 
 {
@@ -67,7 +67,7 @@ categoria: "Pasteles",
 descripcion: "Deliciosos panetones",
 pdf: "https://drive.google.com/file/d/1vX8UVA11Wg9dE06N5aGb-T-RIWtJsQAV/view?usp=drive_link",
 video: "https://drive.google.com/file/d/14r0-bqbaiTZwnC7fJp6KiXIhsYP-O2O2/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/panetones-chocotones.png"
 },
 
 {
@@ -77,7 +77,7 @@ categoria: "Pasteles",
 descripcion: "Masas para pasteles",
 pdf: "https://drive.google.com/file/d/1kN2lHRcZ0pP1Sd3EgoWeTp_pkJ03yi8a/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1ySkCRXi5IZNPFVqUYZ1lR9jyzG4fMFJB/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/masas.png"
 },
 
 {
@@ -87,7 +87,7 @@ categoria: "Snacks",
 descripcion: "Deliciosos snacks",
 pdf: "https://drive.google.com/file/d/1mO_l2GDT1z2wv--pI4MU005j8j9nXr88/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1ISSxNcuwYUZLkbxVWI3kAzxcy-86Pp8d/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/fritos-asados.png"
 },
 
 {
@@ -97,7 +97,7 @@ categoria: "Postres",
 descripcion: "Delicioso postre",
 pdf: "https://drive.google.com/file/d/11tGHvYWg5bXm2erZQzx9rY4Taa_1oe3A/view?usp=drive_link",
 video: "",
-portada: ""
+portada: "/recetarios/crema-leche-polvo.png"
 },
 
 {
@@ -107,7 +107,7 @@ categoria: "Postres",
 descripcion: "Exquisitas donuts",
 pdf: "https://drive.google.com/file/d/1UpyrA19wLfOI6xIWOcEPfU6ff65JWhpu/view?usp=drive_link",
 video: "https://drive.google.com/file/d/11MJcHlUiRBq1uiKcxirjI8gZF2L-T7ak/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/donuts.png"
 },
 
 {
@@ -117,7 +117,7 @@ categoria: "Pasteles",
 descripcion: "Coberturas para pasteles",
 pdf: "https://drive.google.com/file/d/1Bcjnc38wojgL_wRYBJ-y7YxXiJ77kRyQ/view?usp=drive_link",
 video: "https://drive.google.com/file/d/17FKIFihdMEhqMrOL2dOWyqPggcV3Dxw1/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/coberturas.png"
 },
 
 {
@@ -127,7 +127,7 @@ categoria: "Postres",
 descripcion: "Bolis deliciosos",
 pdf: "https://drive.google.com/file/d/1cP7NeujpAQVFKo87q2n3JOBOG2ETbpaI/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1EJYmoGuGVmuLJz044cim1A4h12yR-UAS/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/bolis-gourmet.png"
 },
 
 {
@@ -137,7 +137,7 @@ categoria: "Postres",
 descripcion: "Alfajores suaves",
 pdf: "https://drive.google.com/file/d/1PbFLSDBrl8qIowTHTpcVTtHTQSW1kojl/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1DuXmsmaLOq8546Q1BBJYUm57KOv1poes/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/alfajores-gourmet.png"
 },
 
 {
@@ -147,7 +147,7 @@ categoria: "Pasteles y Postres",
 descripcion: "Deliciosos rellenos",
 pdf: "https://drive.google.com/file/d/1f8y5hgHVxxfvKXoo-q8-ytClEZtAg5Y2/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1u6o4VqD3KhKZyfZkV7Z8mKONY0UYkLj3/view?usp=drive_link",
-portada: ""
+portada: "/recetarios/rellenos.png"
 }
 
 ];
