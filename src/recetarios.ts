@@ -87,7 +87,7 @@ categoria: "Snacks",
 descripcion: "Deliciosos snacks",
 pdf: "https://drive.google.com/file/d/1mO_l2GDT1z2wv--pI4MU005j8j9nXr88/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1ISSxNcuwYUZLkbxVWI3kAzxcy-86Pp8d/view?usp=drive_link",
-portada: "/recetarios/fritos-asados.png"
+portada: "/recetarios/fritos-y-asados.png"
 },
 
 {
@@ -97,7 +97,7 @@ categoria: "Postres",
 descripcion: "Delicioso postre",
 pdf: "https://drive.google.com/file/d/11tGHvYWg5bXm2erZQzx9rY4Taa_1oe3A/view?usp=drive_link",
 video: "",
-portada: "/recetarios/pastel-crema-de-leche-polvo.png"
+portada: "/recetarios/pastel-crema-de-leche-en-polvo.png"
 },
 
 {
