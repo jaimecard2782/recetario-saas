@@ -97,7 +97,7 @@ categoria: "Postres",
 descripcion: "Delicioso postre",
 pdf: "https://drive.google.com/file/d/11tGHvYWg5bXm2erZQzx9rY4Taa_1oe3A/view?usp=drive_link",
 video: "",
-portada: "/recetarios/crema-leche-polvo.png"
+portada: "/recetarios/pastel-crema-de-leche-polvo.png"
 },
 
 {
@@ -117,7 +117,7 @@ categoria: "Pasteles",
 descripcion: "Coberturas para pasteles",
 pdf: "https://drive.google.com/file/d/1Bcjnc38wojgL_wRYBJ-y7YxXiJ77kRyQ/view?usp=drive_link",
 video: "https://drive.google.com/file/d/17FKIFihdMEhqMrOL2dOWyqPggcV3Dxw1/view?usp=drive_link",
-portada: "/recetarios/coberturas.png"
+portada: "/recetarios/coberturas-para-pasteles.png"
 },
 
 {
@@ -147,7 +147,7 @@ categoria: "Pasteles y Postres",
 descripcion: "Deliciosos rellenos",
 pdf: "https://drive.google.com/file/d/1f8y5hgHVxxfvKXoo-q8-ytClEZtAg5Y2/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1u6o4VqD3KhKZyfZkV7Z8mKONY0UYkLj3/view?usp=drive_link",
-portada: "/recetarios/rellenos.png"
+portada: "/recetarios/101-rellenos-para-pasteles.png"
 }
 
 ];
