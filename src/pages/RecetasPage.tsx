@@ -30,21 +30,36 @@ export default function RecetasPage() {
             }}
           >
 
-            <div
-              style={{
-                width: "100%",
-                height: "120px",
-                borderRadius: "14px",
-                marginBottom: "14px",
-                background: "linear-gradient(135deg,#fdf2f8,#fce7f3,#fae8ff)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "38px"
-              }}
-            >
-              📘
-            </div>
+           {recetario.portada ? (
+  <img
+    src={recetario.portada}
+    alt={recetario.titulo}
+    style={{
+      width: "100%",
+      height: "180px",
+      objectFit: "cover",
+      borderRadius: "14px",
+      marginBottom: "14px",
+      display: "block"
+    }}
+  />
+) : (
+  <div
+    style={{
+      width: "100%",
+      height: "180px",
+      borderRadius: "14px",
+      marginBottom: "14px",
+      background: "linear-gradient(135deg,#fdf2f8,#fce7f3,#fae8ff)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "38px"
+    }}
+  >
+    📘
+  </div>
+)}
 
             <p style={{fontSize:"12px",fontWeight:700,color:"#a16207"}}>
               {recetario.categoria}
