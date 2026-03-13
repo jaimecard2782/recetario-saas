@@ -279,7 +279,7 @@ useEffect(() => {
           <section style={heroCardStyle}>
             <p style={miniLabelStyle}>Tu cocina, más fácil</p>
            <h1 style={heroTitleStyle}>
-  Tus recetas ahora son inteligentes
+  Tus recetas ahora son inteligentes✨
 </h1>
             <p style={heroTextStyle}>
               Todo lo que necesitas para buscar recetas, guardar tus favoritas,
