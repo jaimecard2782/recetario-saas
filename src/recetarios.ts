@@ -57,7 +57,7 @@ categoria: "Pasteles",
 descripcion: "Pasteles de la abuela",
 pdf: "https://drive.google.com/file/d/1LXkEhFrNdBA6F8GxLNsCGkEYSA-Sdz7f/view?usp=drive_link",
 video: "https://drive.google.com/file/d/1d2r8eF_tfw6alQmZ6XxJKzlvjjlbjyqt/view?usp=drive_link",
-portada: "/recetarios/masas-pasteles.png"
+portada: "/recetarios/pasteles-caseros.png"
 },
 
 {
@@ -67,7 +67,7 @@ categoria: "Pasteles",
 descripcion: "Deliciosos panetones",
 pdf: "https://drive.google.com/file/d/1vX8UVA11Wg9dE06N5aGb-T-RIWtJsQAV/view?usp=drive_link",
 video: "https://drive.google.com/file/d/14r0-bqbaiTZwnC7fJp6KiXIhsYP-O2O2/view?usp=drive_link",
-portada: "/recetarios/panetones-chocotones.png"
+portada: "/recetarios/panetones-y-chocotones.png"
 },
 
 {
