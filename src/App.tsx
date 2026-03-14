@@ -756,6 +756,16 @@ useEffect(() => {
 </button>
           </div>
         </div>
+        <div style={profileBlockStyle}>
+  <label style={labelStyle}>Herramientas</label>
+
+  <button
+    onClick={() => setTabActiva("costos")}
+    style={profileAccessButtonStyle}
+  >
+    Calculadora de costos y cantidades
+  </button>
+</div>
       </section>
     );
   };
@@ -1194,7 +1204,19 @@ const featureTitleStyle: React.CSSProperties = {
   fontSize: "20px",
   fontWeight: 800,
 };
-
+const profileAccessButtonStyle: React.CSSProperties = {
+  width: "100%",
+  border: "1px solid #efdce7",
+  borderRadius: "18px",
+  padding: "16px",
+  background: "linear-gradient(180deg, #fff8fb 0%, #fff1f6 100%)",
+  color: "#b94b79",
+  cursor: "pointer",
+  fontSize: "16px",
+  fontWeight: 700,
+  textAlign: "left",
+  boxShadow: "0 8px 18px rgba(188, 117, 150, 0.08)",
+};
 const featureTextStyle: React.CSSProperties = {
   margin: 0,
   color: "#77697a",
