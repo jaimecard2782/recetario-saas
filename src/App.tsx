@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import RecetasPage from "./pages/RecetasPage";
-
+import { BookOpen, BookMarked, ShoppingCart, BadgeDollarSign } from "lucide-react";
 type Tab =
   | "inicio"
   | "recetas"
@@ -37,6 +37,16 @@ type SavedRecipe = {
 };
 
 function App() {
+  const featureIconWrapStyle: React.CSSProperties = {
+  width: "56px",
+  height: "56px",
+  borderRadius: "16px",
+  background: "#f6e9ef",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: "14px",
+};
   const [tabActiva, setTabActiva] = useState<Tab>("inicio");
   const [busqueda, setBusqueda] = useState("");
   const [moneda, setMoneda] = useState("COP");
@@ -275,86 +285,107 @@ useEffect(() => {
   const renderContenido = () => {
     if (tabActiva === "inicio") {
       return (
-        <>
-          <section style={heroCardStyle}>
-            <p style={miniLabelStyle}>Tu cocina, más fácil</p>
-           <h1 style={heroTitleStyle}>
-  Tus recetas ahora son inteligentes✨
+  <>
+    <section style={heroCardStyle}>
+      <div style={heroTopRowStyle}>
+        <div style={heroBadgeStyle}>Mi Repostería</div>
+      </div>
+
+      <h1 style={heroTitleStyle}>
+  Tus recetas ahora son inteligentes
 </h1>
-            <p style={heroTextStyle}>
-              Todo lo que necesitas para buscar recetas, guardar tus favoritas,
-              organizar ingredientes y preparar postres en un solo lugar.
-            </p>
 
-            <input
-              type="text"
-              placeholder="Ejemplo: torta de chocolate, brownies, cheesecake..."
-              value={busqueda}
-              onChange={(e) => setBusqueda(e.target.value)}
-              style={inputStyle}
-            />
+      <p style={heroTextStyle}>
+        Busca recetas en texto o video, guarda tus favoritas y organiza todo
+        desde una experiencia mucho más clara, bonita y práctica.
+      </p>
 
-            <div style={buttonGroupStyle}>
-              <button onClick={buscarEnTexto} style={secondaryButtonStyle}>
-                Ver receta en texto
-              </button>
-              <button onClick={buscarEnVideo} style={primaryButtonStyle}>
-                Ver receta en video
-              </button>
-            </div>
-          </section>
+      <div style={searchWrapStyle}>
+        <input
+          type="text"
+          placeholder="Ejemplo: torta de chocolate, brownies, cheesecake..."
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+          style={inputStyle}
+        />
+      </div>
 
-          <section style={sectionStyle}>
-            <h2 style={sectionTitleStyle}>Funciones principales</h2>
+      <div style={buttonGroupStyle}>
+        <button className="hero-action-btn"onClick={buscarEnTexto} style={secondaryButtonStyle}>
+          <span style={buttonIconStyle}>📄</span>
+          <span>Ver receta en texto</span>
+        </button>
 
-            <div style={cardGridStyle}>
-              <button
-                style={featureCardStyle}
-                onClick={() => setTabActiva("recetas")}
-              >
-                <div style={emojiStyle}>📖</div>
-                <h3 style={featureTitleStyle}>Ver recetas</h3>
-                <p style={featureTextStyle}>
-                  Consulta recetas en texto o video de forma rápida.
-                </p>
-              </button>
+        <button className="hero-action-btn"onClick={buscarEnVideo} style={primaryButtonStyle}>
+          <span style={buttonIconStyle}>▶</span>
+          <span>Ver receta en video</span>
+        </button>
+      </div>
+    </section>
 
-              <button
-                style={featureCardStyle}
-                onClick={() => setTabActiva("mis-recetas")}
-              >
-                <div style={emojiStyle}>📚</div>
-                <h3 style={featureTitleStyle}>Mis recetas</h3>
-                <p style={featureTextStyle}>
-                  Guarda tus propias recetas y consérvalas en la app.
-                </p>
-              </button>
+    <section style={sectionStyle}>
+      <h2 style={sectionTitleStyle}>Funciones principales</h2>
 
-              <button
-                style={featureCardStyle}
-                onClick={() => setTabActiva("compras")}
-              >
-                <div style={emojiStyle}>🛒</div>
-                <h3 style={featureTitleStyle}>Lista de compras</h3>
-                <p style={featureTextStyle}>
-                  Organiza tus ingredientes para cocinar sin olvidar nada.
-                </p>
-              </button>
+      <div style={cardGridStyle}>
+        <button
+        className="feature-card"
+          style={featureCardStyle}
+          onClick={() => setTabActiva("recetas")}
+        >
+          <div style={featureIconWrapStyle}>
+           <BookOpen size={26} strokeWidth={2.2} color="#c85d8f" />
+          </div>
+          <h3 style={featureTitleStyle}>Ver recetas</h3>
+          <p style={featureTextStyle}>
+            Consulta recetas en texto o video de forma rápida.
+          </p>
+        </button>
 
-              <button
-                style={featureCardStyle}
-                onClick={() => setTabActiva("costos")}
-              >
-                <div style={emojiStyle}>💰</div>
-                <h3 style={featureTitleStyle}>Calcular costo y cantidades</h3>
-                <p style={featureTextStyle}>
-                  Ideal para cocinar en casa o vender con mejor control.
-                </p>
-              </button>
-            </div>
-          </section>
-        </>
-      );
+        <button
+        className="feature-card"
+          style={featureCardStyle}
+          onClick={() => setTabActiva("mis-recetas")}
+        >
+          <div style={featureIconWrapStyle}>
+            <BookMarked size={26} strokeWidth={2.2} color="#c85d8f" />
+          </div>
+          <h3 style={featureTitleStyle}>Mis recetas</h3>
+          <p style={featureTextStyle}>
+            Guarda tus propias recetas y consérvalas en la app.
+          </p>
+        </button>
+
+        <button
+        className="feature-card"
+          style={featureCardStyle}
+          onClick={() => setTabActiva("compras")}
+        >
+          <div style={featureIconWrapStyle}>
+            <ShoppingCart size={26} strokeWidth={2.2} color="#c85d8f" />
+          </div>
+          <h3 style={featureTitleStyle}>Lista de compras</h3>
+          <p style={featureTextStyle}>
+            Organiza ingredientes para cocinar sin olvidar nada.
+          </p>
+        </button>
+
+        <button
+        className="feature-card"
+          style={featureCardStyle}
+          onClick={() => setTabActiva("costos")}
+        >
+          <div style={featureIconWrapStyle}>
+            <BadgeDollarSign size={26} strokeWidth={2.2} color="#c85d8f" />
+          </div>
+          <h3 style={featureTitleStyle}>Costos y cantidades</h3>
+          <p style={featureTextStyle}>
+            Calcula costos y ajusta porciones con mejor control.
+          </p>
+        </button>
+      </div>
+    </section>
+  </>
+);
     }
 
     if (tabActiva === "recetas") {
@@ -778,27 +809,30 @@ Perfil
     </div>
   );
 }
-
 const appStyle: React.CSSProperties = {
   minHeight: "100vh",
-  background: "linear-gradient(180deg, #fff4f8 0%, #f8f4f1 100%)",
+  backgroundColor: "#fff7fb",
+  backgroundImage: "radial-gradient(circle at top right, rgba(236, 170, 205, 0.45) 0%, transparent 22%), radial-gradient(circle at top left, rgba(245, 210, 178, 0.35) 0%, transparent 20%), linear-gradient(180deg, #fff7fb 0%, #fdeef5 45%, #fff5ee 100%)",
   padding: "10px",
   paddingBottom: "120px",
-  fontFamily: "Arial, sans-serif",
+  fontFamily: "Inter, Arial, sans-serif",
 };
-
 const containerStyle: React.CSSProperties = {
   maxWidth: "720px",
   margin: "0 auto",
 };
 
 const heroCardStyle: React.CSSProperties = {
-  background: "rgba(255,255,255,0.96)",
+  backgroundImage:
+    'linear-gradient(180deg, rgba(255,255,255,0.72) 0%, rgba(255,245,250,0.82) 100%), url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop")',
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
   border: "1px solid #f1d9e5",
-  borderRadius: "18px",
-  padding: "16px",
-  boxShadow: "0 6px 18px rgba(195, 120, 156, 0.07)",
-  marginBottom: "14px",
+  borderRadius: "28px",
+  padding: "20px",
+  boxShadow: "0 16px 40px rgba(195, 120, 156, 0.10)",
+  marginBottom: "22px",
 };
 
 const miniLabelStyle: React.CSSProperties = {
@@ -810,32 +844,36 @@ const miniLabelStyle: React.CSSProperties = {
 };
 
 const heroTitleStyle: React.CSSProperties = {
-  margin: "0 0 8px 0",
-  color: "#3f2b47",
-  fontSize: "22px",
-  lineHeight: 1.2,
+  margin: "0 0 14px 0",
+  color: "#332042",
+  fontSize: "52px",
+  lineHeight: 1.02,
   textAlign: "center",
+  fontWeight: 800,
+  letterSpacing: "-1.2px",
 };
 
 const heroTextStyle: React.CSSProperties = {
-  margin: "0 0 12px 0",
-  color: "#6f6373",
-  lineHeight: 1.45,
-  fontSize: "14px",
+  margin: "0 0 18px 0",
+  color: "#5f5366",
+  lineHeight: 1.6,
+  fontSize: "17px",
   textAlign: "center",
+  maxWidth: "680px",
+  marginInline: "auto",
+  fontWeight: 500,
 };
 
 const inputStyle: React.CSSProperties = {
   width: "100%",
-  padding: "14px",
-  borderRadius: "14px",
-  border: "1px solid #e3d3dc",
+  padding: "14px 18px",
+  borderRadius: "22px",
+  border: "1px solid #ead6e2",
   fontSize: "16px",
-  marginBottom: "14px",
-  boxSizing: "border-box",
-  background: "#fffafc",
-  color: "#4a3256",
   outline: "none",
+  background: "rgba(255,255,255,0.96)",
+  boxShadow: "0 6px 16px rgba(200,120,160,0.08)",
+  boxSizing: "border-box",
 };
 
 const textareaStyle: React.CSSProperties = {
@@ -861,32 +899,39 @@ const buttonGroupStyle: React.CSSProperties = {
 
 const primaryButtonStyle: React.CSSProperties = {
   width: "100%",
-  padding: "16px 20px",
+  padding: "20px",
+  borderRadius: "24px",
   border: "none",
-  borderRadius: "18px",
-  background: "linear-gradient(135deg, #e96b98, #d45785)",
-  color: "#ffffff",
-  cursor: "pointer",
-  fontSize: "16px",
+  fontSize: "20px",
   fontWeight: 700,
-  letterSpacing: "0.3px",
-  boxShadow: "0 10px 22px rgba(233,107,152,0.35)",
-  transition: "all 0.25s ease",
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "10px",
+  background: "linear-gradient(180deg, #e56f9c 0%, #cf5f89 100%)",
+  color: "#ffffff",
+  boxShadow: "0 10px 22px rgba(207,95,137,0.28)",
+  transition: "transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease",
 };
+  
 
 const secondaryButtonStyle: React.CSSProperties = {
   width: "100%",
-  padding: "16px 20px",
-  border: "none",
-  borderRadius: "18px",
-  background: "#f4dfca",
-  color: "#6e4d3a",
+  padding: "20px",
+  borderRadius: "24px",
+  border: "1px solid #ead9c8",
+  fontSize: "20px",
+  fontWeight: 700,
   cursor: "pointer",
-  fontSize: "16px",
-  fontWeight: 600,
-  letterSpacing: "0.2px",
-  boxShadow: "0 8px 18px rgba(0,0,0,0.08)",
-  transition: "all 0.25s ease",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "10px",
+  background: "linear-gradient(180deg, #f0dfcb 0%, #e2cdb5 100%)",
+  color: "#7b5234",
+  boxShadow: "0 10px 22px rgba(160,120,80,0.14)",
+  transition: "transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease",
 };
 
 const sectionStyle: React.CSSProperties = {
@@ -912,38 +957,6 @@ const subTitleStyle: React.CSSProperties = {
   marginBottom: "12px",
   color: "#5c4432",
   fontSize: "20px",
-};
-
-const cardGridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr",
-  gap: "14px",
-};
-
-const featureCardStyle: React.CSSProperties = {
-  background: "rgba(255,255,255,0.88)",
-  border: "1px solid #f0dce5",
-  borderRadius: "22px",
-  padding: "18px",
-  textAlign: "left",
-  cursor: "pointer",
-};
-
-const emojiStyle: React.CSSProperties = {
-  fontSize: "32px",
-  marginBottom: "8px",
-};
-
-const featureTitleStyle: React.CSSProperties = {
-  margin: "0 0 8px 0",
-  color: "#4a3256",
-  fontSize: "20px",
-};
-
-const featureTextStyle: React.CSSProperties = {
-  margin: 0,
-  color: "#7a6a7d",
-  lineHeight: 1.5,
 };
 
 const contentCardStyle: React.CSSProperties = {
@@ -1103,36 +1116,107 @@ const savedRecipeTextStyle: React.CSSProperties = {
 
 const bottomNavStyle: React.CSSProperties = {
   position: "fixed",
-  bottom: "8px",
+  bottom: "10px",
   left: "50%",
   transform: "translateX(-50%)",
-  width: "min(96%, 520px)",
-  background: "rgba(255,255,255,0.98)",
+  width: "min(94%, 520px)",
+  background: "rgba(255,255,255,0.92)",
   border: "1px solid #efdce7",
-  borderRadius: "18px",
+  borderRadius: "20px",
   display: "grid",
   gridTemplateColumns: "repeat(6, 1fr)",
   gap: "6px",
   padding: "8px",
   zIndex: 9999,
-  backdropFilter: "blur(8px)",
-  boxShadow: "0 10px 24px rgba(0,0,0,0.08)",
+  backdropFilter: "blur(10px)",
+  boxShadow: "0 12px 28px rgba(0,0,0,0.10)",
 };
 
-const navButtonStyle = (active: boolean): React.CSSProperties => ({
+ const navButtonStyle = (active: boolean): React.CSSProperties => ({
   border: "none",
-  borderRadius: "10px",
+  borderRadius: "12px",
   padding: "8px 4px",
-  background: active ? "#f8d8e5" : "#f8f3f6",
+  background: active ? "#f8d8e5" : "transparent",
   color: active ? "#b94b79" : "#6c5a72",
   fontSize: "10px",
   fontWeight: 700,
   lineHeight: 1.1,
   cursor: "pointer",
-  minHeight: "34px",
-  whiteSpace: "normal",
-  wordBreak: "break-word",
+  minHeight: "38px",
   textAlign: "center",
 });
+const heroTopRowStyle: React.CSSProperties = {
+  display: "flex",
+  justifyContent: "center",
+  marginBottom: "10px",
+};
 
+const heroBadgeStyle: React.CSSProperties = {
+  display: "inline-block",
+  padding: "8px 16px",
+  borderRadius: "999px",
+  background: "linear-gradient(180deg, #ffe7f1 0%, #ffd7e8 100%)",
+  color: "#a13a66",
+  fontWeight: 700,
+  fontSize: "13px",
+  letterSpacing: "0.3px",
+  marginBottom: "10px",
+  boxShadow: "0 6px 16px rgba(200,120,160,0.18)",
+};
+
+const searchWrapStyle: React.CSSProperties = {
+  width: "100%",
+  margin: "0 0 18px 0",
+  padding: "0 6px",
+};
+
+const buttonIconStyle: React.CSSProperties = {
+  fontSize: "16px",
+};
+
+const cardGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gap: "16px",
+};
+
+const featureCardStyle: React.CSSProperties = {
+  background: "#ffffff",
+  border: "1px solid #f2e6ec",
+  borderRadius: "26px",
+  padding: "32px",
+  textAlign: "left",
+  cursor: "pointer",
+  boxShadow: "0 18px 45px rgba(0,0,0,0.06)",
+  transition: "all 0.25s ease",
+};
+
+const featureIconWrapStyle: React.CSSProperties = {
+  width: "54px",
+  height: "54px",
+  borderRadius: "16px",
+  background: "#fff1f6",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: "14px",
+};
+
+const emojiStyle: React.CSSProperties = {
+  fontSize: "26px",
+};
+
+const featureTitleStyle: React.CSSProperties = {
+  margin: "0 0 8px 0",
+  color: "#3f2b47",
+  fontSize: "20px",
+  fontWeight: 800,
+};
+
+const featureTextStyle: React.CSSProperties = {
+  margin: 0,
+  color: "#77697a",
+  lineHeight: 1.5,
+  fontSize: "14px",
+};
 export default App;
