@@ -793,12 +793,7 @@ useEffect(() => {
           Compras
         </button>
 
-        <button
-          onClick={() => setTabActiva("costos")}
-          style={navButtonStyle(tabActiva === "costos")}
-        >
-          Costos
-        </button>
+        
         <button
 onClick={() => setTabActiva("perfil")}
 style={navButtonStyle(tabActiva === "perfil")}
@@ -1110,34 +1105,42 @@ const savedRecipeTextStyle: React.CSSProperties = {
 
 const bottomNavStyle: React.CSSProperties = {
   position: "fixed",
-  bottom: "10px",
+  bottom: "12px",
   left: "50%",
   transform: "translateX(-50%)",
-  width: "min(94%, 520px)",
-  background: "rgba(255,255,255,0.92)",
-  border: "1px solid #efdce7",
-  borderRadius: "20px",
+  width: "min(96%, 560px)",
+  background: "rgba(255, 250, 252, 0.94)",
+  border: "1px solid rgba(239, 220, 231, 0.95)",
+  borderRadius: "26px",
   display: "grid",
-  gridTemplateColumns: "repeat(6, 1fr)",
-  gap: "6px",
-  padding: "8px",
+  gridTemplateColumns: "repeat(5, 1fr)",
+  gap: "8px",
+  padding: "10px",
   zIndex: 9999,
-  backdropFilter: "blur(10px)",
-  boxShadow: "0 12px 28px rgba(0,0,0,0.10)",
+  backdropFilter: "blur(14px)",
+  WebkitBackdropFilter: "blur(14px)",
+  boxShadow:
+    "0 14px 34px rgba(188, 117, 150, 0.16), 0 4px 14px rgba(0,0,0,0.06)",
 };
 
  const navButtonStyle = (active: boolean): React.CSSProperties => ({
   border: "none",
-  borderRadius: "12px",
-  padding: "8px 4px",
-  background: active ? "#f8d8e5" : "transparent",
+  borderRadius: "18px",
+  padding: "12px 6px",
+  background: active
+    ? "linear-gradient(180deg, #ffe5ef 0%, #ffd6e6 100%)"
+    : "rgba(255,255,255,0.35)",
   color: active ? "#b94b79" : "#6c5a72",
-  fontSize: "10px",
-  fontWeight: 700,
-  lineHeight: 1.1,
+  fontSize: "12px",
+  fontWeight: 800,
+  lineHeight: 1.15,
   cursor: "pointer",
-  minHeight: "38px",
+  minHeight: "56px",
   textAlign: "center",
+  boxShadow: active
+    ? "0 8px 18px rgba(201, 102, 143, 0.18), inset 0 1px 0 rgba(255,255,255,0.8)"
+    : "none",
+  transition: "all 0.2s ease",
 });
 const heroTopRowStyle: React.CSSProperties = {
   display: "flex",
