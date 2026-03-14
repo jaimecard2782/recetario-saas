@@ -1183,10 +1183,6 @@ const featureCardStyle: React.CSSProperties = {
   transition: "all 0.25s ease",
 };
 
-const emojiStyle: React.CSSProperties = {
-  fontSize: "26px",
-};
-
 const featureTitleStyle: React.CSSProperties = {
   margin: "0 0 8px 0",
   color: "#3f2b47",
