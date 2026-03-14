@@ -835,14 +835,6 @@ const heroCardStyle: React.CSSProperties = {
   marginBottom: "22px",
 };
 
-const miniLabelStyle: React.CSSProperties = {
-  margin: "0 0 8px 0",
-  color: "#d36a91",
-  fontSize: "14px",
-  fontWeight: 700,
-  letterSpacing: "0.3px",
-};
-
 const heroTitleStyle: React.CSSProperties = {
   margin: "0 0 14px 0",
   color: "#332042",
