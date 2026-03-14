@@ -866,6 +866,8 @@ const inputStyle: React.CSSProperties = {
   background: "rgba(255,255,255,0.96)",
   boxShadow: "0 6px 16px rgba(200,120,160,0.08)",
   boxSizing: "border-box",
+  color: "#5f5366",
+  caretColor: "#5f5366",
 };
 
 const textareaStyle: React.CSSProperties = {
