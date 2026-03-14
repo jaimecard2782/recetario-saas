@@ -1183,17 +1183,6 @@ const featureCardStyle: React.CSSProperties = {
   transition: "all 0.25s ease",
 };
 
-const featureIconWrapStyle: React.CSSProperties = {
-  width: "54px",
-  height: "54px",
-  borderRadius: "16px",
-  background: "#fff1f6",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  marginBottom: "14px",
-};
-
 const emojiStyle: React.CSSProperties = {
   fontSize: "26px",
 };
